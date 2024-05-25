@@ -110,7 +110,6 @@ include "connect.php";
             <div class="body-content">
                 <p>Click on the link below to reset your password:</p>
              '.$link.'
-                <p>Your Password:'.$pass.'</p>
             </div>
             <div class="footer">
                 <p>If you did not request a password reset, please ignore this email.</p>
@@ -124,14 +123,14 @@ include "connect.php";
     {
         $arr =[
             'success'=> true,
-            'message'=> "thanh cong"
+            'message'=> "Send email is successfully! Please check your email to reset password."
         ];
     }
     else
     {
         $arr =[
             'success'=> false,
-            'message'=> "Khong thanh cong"
+            'message'=> "Send email is unsuccessfully"
         ];
     }
  
